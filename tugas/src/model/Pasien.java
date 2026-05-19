@@ -3,8 +3,8 @@ package model;
     public class Pasien extends Person {
     private String nomorPasien;
 
-    public Pasien(String name, String Falamat, String nomorTelepon, String nomorPasien) {
-        super(name, Falamat, nomorTelepon);
+    public Pasien(String name, String alamat, String nomorTelepon, String nomorPasien) {
+        super(name, alamat, nomorTelepon);
         this.nomorPasien = nomorPasien;
     }
 
@@ -14,5 +14,8 @@ package model;
         System.out.println("Pasien " + this.name + " (No. Pasien: " + this.nomorPasien + ") membuat janji pemeriksaan dengan Dokter " + dokter.getName());
         return app;
     }
+    
+
+    
 }
 

@@ -3,12 +3,12 @@ package model;
 // Abstract class sebagai parent utama sesuai diagram UML
 public abstract class Person {
     protected String name;           
-    protected String Falamat;        
+    protected String alamat;        
     protected String nomorTelepon;   
 
-    public Person(String name, String Falamat, String nomorTelepon) {
+    public Person(String name, String alamat, String nomorTelepon) {
         this.name = name;
-        this.Falamat = Falamat;
+        this.alamat = alamat;
         this.nomorTelepon = nomorTelepon;
     }
 
@@ -16,7 +16,10 @@ public abstract class Person {
         return name; 
     }
     
-    public void setNama() { 
+    public void setNama(String name) { 
+        this.name = name;
         System.out.println("Nama berhasil diubah.");
     }
+    
+  
 }

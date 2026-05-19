@@ -3,8 +3,8 @@ package model;
 public class Dokter extends Person {
     private String spesialisasi;
 
-    public Dokter(String name, String Falamat, String nomorTelepon, String spesialisasi) {
-        super(name, Falamat, nomorTelepon);
+    public Dokter(String name, String alamat, String nomorTelepon, String spesialisasi) {
+        super(name, alamat, nomorTelepon);
         this.spesialisasi = spesialisasi;
     }
 
@@ -22,4 +22,6 @@ public class Dokter extends Person {
         Prescription prescription = new Prescription("RX-" + app.getIdAppointment());
         return prescription;
     }
+
+    
 }

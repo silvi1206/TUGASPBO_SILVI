@@ -2,14 +2,14 @@ package model;
 
 public class Appointment {
     private String idAppointment;     
-    private String tanggalPemeriksaan; 
-    private String kalunan;            // Menjaga typo 'kalunan' dari dokumen aslimu
+    private String tanggalPemeriksaan;  
+    private String keluhan;
     private String statusPemeriksaan;  
 
-    public Appointment(String idAppointment, String tanggalPemeriksaan, String kalunan) {
+    public Appointment(String idAppointment, String tanggalPemeriksaan, String keluhan) {
         this.idAppointment = idAppointment;
         this.tanggalPemeriksaan = tanggalPemeriksaan;
-        this.kalunan = kalunan;
+        this.keluhan = keluhan;
         this.statusPemeriksaan = "DIPROSES";
     }
 
@@ -21,14 +21,9 @@ public class Appointment {
         this.tanggalPemeriksaan = tanggalPemeriksaan;
     }
 
-    public String getKalunan() {
-        return kalunan;
+    public String getKeluhan() {
+        return keluhan;
     }
-
-    public void setKalunan(String kalunan) {
-        this.kalunan = kalunan;
-    }
-
     public String getStatusPemeriksaan() {
         return statusPemeriksaan;
     }
